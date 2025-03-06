@@ -1,0 +1,67 @@
+/* Base theme variables */
+:root {
+  /* Light theme */
+  --light-background: 0 0% 100%;
+  --light-foreground: 222.2 84% 4.9%;
+  --light-card: 0 0% 100%;
+  --light-card-foreground: 222.2 84% 4.9%;
+  --light-border: 214.3 31.8% 91.4%;
+  --light-input: 214.3 31.8% 91.4%;
+  --light-ring: 262.1 83.3% 57.8%;
+  --light-primary: 262.1 83.3% 57.8%;
+  --light-secondary: 210 40% 96.1%;
+  --light-muted: 210 40% 96.1%;
+  --light-accent: 210 40% 96.1%;
+
+  /* Dark theme */
+  --dark-background: 240 10% 4%;
+  --dark-foreground: 210 40% 98%;
+  --dark-card: 240 10% 4%;
+  --dark-card-foreground: 210 40% 98%;
+  --dark-border: 217.2 32.6% 17.5%;
+  --dark-input: 217.2 32.6% 17.5%;
+  --dark-ring: 262.1 83.3% 57.8%;
+  --dark-primary: 262.1 83.3% 57.8%;
+  --dark-secondary: 217.2 32.6% 17.5%;
+  --dark-muted: 217.2 32.6% 17.5%;
+  --dark-accent: 217.2 32.6% 17.5%;
+
+  /* Shared colors */
+  --neon-primary: 262.1 83.3% 57.8%;
+  --neon-secondary: 328.6 100% 54%;
+  --neon-accent: 160 84% 39%;
+}
+
+/* Theme application */
+:root {
+  --background: var(--light-background);
+  --foreground: var(--light-foreground);
+  --card: var(--light-card);
+  --card-foreground: var(--light-card-foreground);
+  --border: var(--light-border);
+  --input: var(--light-input);
+  --ring: var(--light-ring);
+  --primary: var(--light-primary);
+  --secondary: var(--light-secondary);
+  --muted: var(--light-muted);
+  --accent: var(--light-accent);
+}
+
+.dark {
+  --background: var(--dark-background);
+  --foreground: var(--dark-foreground);
+  --card: var(--dark-card);
+  --card-foreground: var(--dark-card-foreground);
+  --border: var(--dark-border);
+  --input: var(--dark-input);
+  --ring: var(--dark-ring);
+  --primary: var(--dark-primary);
+  --secondary: var(--dark-secondary);
+  --muted: var(--dark-muted);
+  --accent: var(--dark-accent);
+}
+
+/* Transitions */
+* {
+  @apply transition-colors duration-200;
+}
